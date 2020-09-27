@@ -1,0 +1,7 @@
+---
+layout: layout-default
+---
+{% set latest = accidents[accidents.length - 1] %}
+{% set previous = accidents[accidents.length - 2] %}
+<h1>It has been <span class="number-of-days"></span> since my last bike accident; {{ latest.what }} on <a href="https://www.openstreetmap.org/?whereami=1&amp;query={{ latest.coords }}#map=19">{{ latest.where }}</a>. 🤦‍♂️</h1>
+<p>Prior to this accident the amount of time was: {% previousRecord latest.when, previous.when %}.</p>
