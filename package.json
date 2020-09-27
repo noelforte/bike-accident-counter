@@ -14,9 +14,7 @@
     "markdown-it": "^11.0.1",
     "postcss": "^8.1.0",
     "terser": "^4.8.0",
-    "yaml": "^1.10.0"
-  },
-  "devDependencies": {
+    "yaml": "^1.10.0",
     "sass": "^1.26.11"
   },
   "repository": "noelforte/bike-accident-counter-site",
