@@ -31,10 +31,13 @@ module.exports = eleventy => {
   eleventy.setLibrary("md", md(config.markdown));
 
   // Passthroughs
-  let passthroughs = [];
+  let passthroughs = ["assets/fonts", "_redirects"];
   passthroughs.forEach(passthrough =>
     eleventy.addPassthroughCopy(`${options.dir.input}/${passthrough}`)
   );
+
+  // Watch Targets
+  eleventy.addWatchTarget("./source/assets/");
 
   // Return Main Config //
   return options;

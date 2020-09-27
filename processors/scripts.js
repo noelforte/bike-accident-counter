@@ -7,7 +7,7 @@ module.exports = code => {
   const babelResult = babel.transformSync(code, {
     presets: [["@babel/preset-env"]],
   });
-  if (env.node === "production" || env.eleventy === "prime") {
+  if (env.node === "production") {
     let terserResult = terser.minify(babelResult.code, {
       toplevel: true,
     });

@@ -4,18 +4,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }}</title>
+  <style>
+    {% processSass "assets/sass/main.scss" %}
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Noel’s Bike Accident Counter</h1>
-    <h2>Keeping track of how long it’s been since Noel bit the dust on the bike.</h2>
-  </header>
-  <main>
-    {{ content | safe }}
-  </main>
-  <footer>
-    <p>Copyright &copy; {{ site.time | formatDate('yyyy') }} Noel Forté, who, to the best of his ability tries to stay on his bike. He’s done a pretty good job so far.</p>
-  </footer>
+  <noscript>
+    <div class="noscript">
+      <p>This page uses JavaScript to run, please enable it if it’s disabled.</p>
+    </div>
+  </noscript>
+  <div class="container">
+    <header>
+      <h1><a href="/">{{ site.title }}</a></h1>
+      <p>{{ site.tagline }}</p>
+    </header>
+    <main>
+      {{ content | safe }}
+    </main>
+    <footer>
+      <p>Copyright &copy;{{ site.time | formatDate('yyyy') }} Noel Forté, who, to the best of his ability, tries to stay on his bike. He’s done a pretty good job so far.</p>
+    </footer>
+  </div>
   {% if page.url == '/' %}
   <script src="https://cdn.jsdelivr.net/npm/luxon@1.25.0/build/global/luxon.min.js"></script>
   <script>
@@ -23,9 +33,9 @@
       const dt = luxon.DateTime;
       const lastAccident = dt.fromISO("{% set lastAccident = accidents | last %}{{ lastAccident.when }}");
       const now = dt.local();
-      let num = now.diff(lastAccident, "days").days.toFixed();
+      let num = Math.floor(now.diff(lastAccident, "days").days);
 
-      document.querySelector("span.number-of-days").innerHTML = `${num} ${num == 1 ? "day" : "days"}`;;
+      document.querySelector(".duration.latest").innerHTML = `${num} ${num == 1 ? "day" : "days"}`;;
     {% endset %}{{ counter | processScript | safe }}
   </script>
   {% endif %}

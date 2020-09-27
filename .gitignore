@@ -3,4 +3,3 @@ node_modules
 .cache/
 # Build directory
 build/
-.DS_Store

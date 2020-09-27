@@ -2,13 +2,13 @@ dependencies:
   '@11ty/eleventy': 0.11.0
   '@babel/core': 7.11.6
   '@babel/preset-env': 7.11.5_@babel+core@7.11.6
-  autoprefixer: 10.0.0_postcss@8.0.9
+  autoprefixer: 10.0.1_postcss@8.1.0
   clean-css: 4.2.3
   glob: 7.1.6
   luxon: 1.25.0
   markdown-it: 11.0.1
-  postcss: 8.0.9
-  terser: 5.3.2
+  postcss: 8.1.0
+  terser: 4.8.0
   yaml: 1.10.0
 devDependencies:
   sass: 1.26.11
@@ -1204,23 +1204,23 @@ packages:
     dev: false
     resolution:
       integrity: sha1-7GphrlZIDAw8skHJVhjiCJL5Zyo=
-  /autoprefixer/10.0.0_postcss@8.0.9:
+  /autoprefixer/10.0.1_postcss@8.1.0:
     dependencies:
       browserslist: 4.14.5
       caniuse-lite: 1.0.30001137
       colorette: 1.2.1
       normalize-range: 0.1.2
       num2fraction: 1.2.2
-      postcss: 8.0.9
+      postcss: 8.1.0
       postcss-value-parser: 4.1.0
     dev: false
     engines:
       node: ^10 || ^12 || >=14
     hasBin: true
     peerDependencies:
-      postcss: ^8.0.2
+      postcss: ^8.1.0
     resolution:
-      integrity: sha512-rFlVYthz6Iw0LhEYryiGGyjTGofebWie3ydvtqTCJiwWe+z6y8H35b4cadYbOUcYlP495TNeVktW+ZZqxbPW4Q==
+      integrity: sha512-aQo2BDIsoOdemXUAOBpFv4ZQa2DrOtEufarYhtFsK1088Ca0TUwu/aQWf0M3mrILXZ3mTIVn1lR3hPW8acacsw==
   /axios/0.19.0:
     dependencies:
       follow-redirects: 1.5.10
@@ -2154,7 +2154,7 @@ packages:
       node: '>=0.4.7'
     hasBin: true
     optionalDependencies:
-      uglify-js: 3.10.4
+      uglify-js: 3.11.0
     resolution:
       integrity: sha512-1f2BACcBfiwAfStCKZNrUCgqNZkGsAT7UM3kkYtXuLo0KnaVfjKOyf7PRzB6++aK9STyT1Pd2ZCPe3EGOXleXA==
   /has-ansi/2.0.0:
@@ -3074,7 +3074,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
-  /postcss/8.0.9:
+  /postcss/8.1.0:
     dependencies:
       colorette: 1.2.1
       line-column: 1.0.2
@@ -3084,7 +3084,7 @@ packages:
     engines:
       node: ^10 || ^12 || >=14
     resolution:
-      integrity: sha512-9Ikq03Hvb/L6dgnOtNOUbcgg9Rsff5uKrI1TyNTQ2ALpa6psZk1Ar3/Hhxv2Q0rECRGDxtcMUTZIQglXozlrDQ==
+      integrity: sha512-d3RppIo1DI66oHxA1vdckr5qciQbMIrHvyzuvp2cLJHOLwJHg7X9ncrfw2Ri6Sgiwv/GoXtOwEHJ9E9VSRxXWQ==
   /pretty-ms/0.2.2:
     dependencies:
       parse-ms: 0.1.2
@@ -3726,7 +3726,7 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-g0D8RwLDEi310iKI+IKD9RPT/dQ=
-  /terser/5.3.2:
+  /terser/4.8.0:
     dependencies:
       commander: 2.20.3
       source-map: 0.6.1
@@ -3736,7 +3736,7 @@ packages:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-H67sydwBz5jCUA32ZRL319ULu+Su1cAoZnnc+lXnenGRYWyLE3Scgkt8mNoAsMx0h5kdo758zdoS0LG9rYZXDQ==
+      integrity: sha512-EAPipTNeWsb/3wLPeup1tVPaXfIaU68xMnVdPafIL1TV05OhASArYyIfFvnvJCNrR2NIOvDVNNTFRa+Re2MWyw==
   /text-table/0.2.0:
     dev: false
     resolution:
@@ -3812,14 +3812,14 @@ packages:
       uglify-to-browserify: 1.0.2
     resolution:
       integrity: sha1-KcVzMUgFe7Th913zW3qcty5qWd0=
-  /uglify-js/3.10.4:
+  /uglify-js/3.11.0:
     dev: false
     engines:
       node: '>=0.8.0'
     hasBin: true
     optional: true
     resolution:
-      integrity: sha512-kBFT3U4Dcj4/pJ52vfjCSfyLyvG9VYYuGYPmrPvAxRw/i7xHiT4VvCev+uiEMcEEiu6UNB6KgWmGtSUYIWScbw==
+      integrity: sha512-e1KQFRCpOxnrJsJVqDUCjURq+wXvIn7cK2sRAx9XL3HYLL9aezOP4Pb1+Y3/o693EPk111Yj2Q+IUXxcpHlygQ==
   /uglify-to-browserify/1.0.2:
     dev: false
     optional: true
@@ -4041,12 +4041,12 @@ specifiers:
   '@11ty/eleventy': ^0.11.0
   '@babel/core': ^7.11.6
   '@babel/preset-env': ^7.11.5
-  autoprefixer: ^10.0.0
+  autoprefixer: ^10.0.1
   clean-css: ^4.2.3
   glob: ^7.1.6
   luxon: ^1.25.0
   markdown-it: ^11.0.1
-  postcss: ^8.0.9
+  postcss: ^8.1.0
   sass: ^1.26.11
-  terser: ^5.3.2
+  terser: ^4.8.0
   yaml: ^1.10.0
