@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
+  <title>How many days has it been since Noel crashed the bike?</title>
   <style>
     {% processSass "assets/sass/main.scss" %}
   </style>
@@ -16,7 +16,7 @@
   </noscript>
   <div class="container">
     <header>
-      <h1><a href="/">{{ site.title }}</a></h1>
+      <h1><a href="/">bikecounter.4te.fun</a></h1>
       <p>{{ site.tagline }}</p>
     </header>
     <main>
@@ -35,7 +35,7 @@
       const now = dt.local();
       let num = Math.floor(now.diff(lastAccident, "days").days);
 
-      document.querySelector(".duration.latest").innerHTML = `${num} ${num == 1 ? "day" : "days"}`;;
+      document.querySelector(".duration.latest").innerHTML = `${num} ${num == 1 ? "day" : "days"}`;
     {% endset %}{{ counter | processScript | safe }}
   </script>
   {% endif %}
