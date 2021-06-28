@@ -1,0 +1,21 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "bike-accident-counter-site@1.0.0",
+    "stage": "start",
+    "script": "pnpm run clean && eleventy --serve",
+    "pkgname": "bike-accident-counter-site",
+    "err": {
+      "name": "Error",
+      "message": "bike-accident-counter-site@1.0.0 start: `pnpm run clean && eleventy --serve`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "Error: bike-accident-counter-site@1.0.0 start: `pnpm run clean && eleventy --serve`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/home/noel/.fnm/node-versions/v14.17.0/installation/lib/node_modules/pnpm/dist/pnpm.cjs:89015:20)\n    at ChildProcess.emit (events.js:376:20)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  }
+}

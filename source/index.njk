@@ -3,5 +3,5 @@ layout: layout-default
 ---
 {% set latest = accidents[accidents.length - 1] %}
 {% set previous = accidents[accidents.length - 2] %}
-<h1>It has been <span class="duration latest"></span> since the last bike accident; {{ latest.what }} on <a title="see where i wiped out" href="https://www.openstreetmap.org/?whereami=1&amp;query={{ latest.coords }}#map=19">{{ latest.where }}</a>. <span title="rekd">💥🚲🤦‍♂️</span></h1>
+<h1>It has been <span class="duration latest"></span> since the last bike accident; {{ latest.what }} on <a title="see where i wiped out" href="https://www.openstreetmap.org/#map=19/{{ latest.coords.replace(',', '/') }}">{{ latest.where }}</a>. <span title="rekd">💥🚲🤦‍♂️</span></h1>
 <p>Before this, the last count was <span class="duration previous">{% previousRecord latest.when, previous.when %}</span>.</p>
